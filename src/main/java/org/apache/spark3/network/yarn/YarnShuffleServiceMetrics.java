@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.spark.network.yarn;
+package org.apache.spark3.network.yarn;
 
 import java.util.Map;
 

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.spark.network.yarn;
+package org.apache.spark3.network.yarn;
 
 import java.io.File;
 import java.io.IOException;
@@ -58,7 +58,7 @@ import org.apache.spark.network.server.TransportServer;
 import org.apache.spark.network.server.TransportServerBootstrap;
 import org.apache.spark.network.shuffle.ExternalBlockHandler;
 import org.apache.spark.network.util.TransportConf;
-import org.apache.spark.network.yarn.util.HadoopConfigProvider;
+import org.apache.spark3.network.yarn.util.HadoopConfigProvider;
 
 /**
  * An external shuffle service used by Spark on Yarn.
