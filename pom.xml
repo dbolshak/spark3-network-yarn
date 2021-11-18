@@ -166,6 +166,14 @@
               <pattern>org.apache.commons</pattern>
               <shadedPattern>${spark.shade.packageName}.apache.commons</shadedPattern>
             </relocation>
+            <relocation>
+              <pattern>org.apache.spark.network</pattern>
+              <shadedPattern>${spark.shade.packageName}.spark.network</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>org.apache.spark.unused</pattern>
+              <shadedPattern>${spark.shade.packageName}.spark.unused</shadedPattern>
+            </relocation>
           </relocations>
         </configuration>
         <executions>
