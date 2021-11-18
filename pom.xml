@@ -23,7 +23,6 @@
     <groupId>org.apache.spark</groupId>
     <artifactId>spark-parent_2.12</artifactId>
     <version>3.2.0</version>
-    <relativePath>../../pom.xml</relativePath>
   </parent>
 
   <artifactId>spark-network-yarn_2.12</artifactId>
