@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite 
+errors="0" failures="0" hostname="1f-dbolshakov-msk-2.local" name="org.scalatest.tools.DiscoverySuite" tests="0" time="0.008" timestamp="2021-11-18T14:30:47">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property
+    name="sun.boot.library.path" value="/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.312-b07"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="jdk.vendor.version" value="Zulu 8.58.0.13-CA-macosx"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property
+    name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property
+    name="user.dir" value="/Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn"/>
+    <property name="spark.test.docker.removePulledImage" value="true"/>
+    <property name="java.runtime.version" value="1.8.0_312-b07"/>
+    <property name="spark.ui.enabled" value="false"/>
+    <property
+    name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property
+    name="basedir" value="/Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn"/>
+    <property
+    name="java.endorsed.dirs" value="/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property
+    name="java.io.tmpdir" value="/Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn/target/tmp"/>
+    <property name="derby.system.durability" value="test"/>
+    <property name="line.separator" value=" "/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="io.netty.tryReflectionSetAccessible" value="true"/>
+    <property
+    name="log4j.configuration" value="file:src/test/resources/log4j.properties"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="spark.ui.showConsoleProgress" value="false"/>
+    <property
+    name="java.library.path" value="/Users/denis.bolshakov/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property
+    name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property
+    name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.16"/>
+    <property
+    name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/denis.bolshakov"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="spark.testing" value="1"/>
+    <property name="user.name" value="denis.bolshakov"/>
+    <property
+    name="java.class.path" value="/Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn/target/scala-2.12/test-classes:/Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn/target/scala-2.12/classes:/Users/denis.bolshakov/.m2/repository/org/apache/spark/spark-network-shuffle_2.12/3.2.0/spark-network-shuffle_2.12-3.2.0.jar:/Users/denis.bolshakov/.m2/repository/org/apache/spark/spark-network-common_2.12/3.2.0/spark-network-common_2.12-3.2.0.jar:/Users/denis.bolshakov/.m2/repository/io/netty/netty-all/4.1.68.Final/netty-all-4.1.68.Final.jar:/Users/denis.bolshakov/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/denis.bolshakov/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar:/Users/denis.bolshakov/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/Users/denis.bolshakov/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/Users/denis.bolshakov/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/Users/denis.bolshakov/.m2/repository/org/apache/commons/commons-crypto/1.1.0/commons-crypto-1.1.0.jar:/Users/denis.bolshakov/.m2/repository/com/google/crypto/tink/tink/1.6.0/tink-1.6.0.jar:/Users/denis.bolshakov/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/denis.bolshakov/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/denis.bolshakov/.m2/repository/io/dropwizard/metrics/metrics-core/4.2.0/metrics-core-4.2.0.jar:/Users/denis.bolshakov/.m2/repository/org/roaringbitmap/RoaringBitmap/0.9.0/RoaringBitmap-0.9.0.jar:/Users/denis.bolshakov/.m2/repository/org/roaringbitmap/shims/0.9.0/shims-0.9.0.jar:/Users/denis.bolshakov/.m2/repository/org/apache/spark/spark-tags_2.12/3.2.0/spark-tags_2.12-3.2.0.jar:/Users/denis.bolshakov/.m2/repository/org/scala-lang/scala-library/2.12.15/scala-library-2.12.15.jar:/Users/denis.bolshakov/.m2/repository/org/apache/spark/spark-tags_2.12/3.2.0/spark-tags_2.12-3.2.0-tests.jar:/Users/denis.bolshakov/.m2/repository/org/apache/hadoop/hadoop-client-api/3.3.1/hadoop-client-api-3.3.1.jar:/Users/denis.bolshakov/.m2/repository/org/apache/hadoop/hadoop-client-runtime/3.3.1/hadoop-client-runtime-3.3.1.jar:/Users/denis.bolshakov/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/Users/denis.bolshakov/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/denis.bolshakov/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar:/Users/denis.bolshakov/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar:/Users/denis.bolshakov/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/denis.bolshakov/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest_2.12/3.2.9/scalatest_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-core_2.12/3.2.9/scalatest-core_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-compatible/3.2.9/scalatest-compatible-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalactic/scalactic_2.12/3.2.9/scalactic_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-featurespec_2.12/3.2.9/scalatest-featurespec_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-flatspec_2.12/3.2.9/scalatest-flatspec_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-freespec_2.12/3.2.9/scalatest-freespec_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-funsuite_2.12/3.2.9/scalatest-funsuite_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-funspec_2.12/3.2.9/scalatest-funspec_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-propspec_2.12/3.2.9/scalatest-propspec_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-refspec_2.12/3.2.9/scalatest-refspec_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-wordspec_2.12/3.2.9/scalatest-wordspec_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-diagrams_2.12/3.2.9/scalatest-diagrams_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-matchers-core_2.12/3.2.9/scalatest-matchers-core_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-shouldmatchers_2.12/3.2.9/scalatest-shouldmatchers_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scalatest/scalatest-mustmatchers_2.12/3.2.9/scalatest-mustmatchers_2.12-3.2.9.jar:/Users/denis.bolshakov/.m2/repository/org/scala-lang/scala-reflect/2.12.15/scala-reflect-2.12.15.jar:/Users/denis.bolshakov/.m2/repository/org/scalatestplus/scalacheck-1-15_2.12/3.2.9.0/scalacheck-1-15_2.12-3.2.9.0.jar:/Users/denis.bolshakov/.m2/repository/org/scalacheck/scalacheck_2.12/1.15.4/scalacheck_2.12-1.15.4.jar:/Users/denis.bolshakov/.m2/repository/org/scalatestplus/mockito-3-4_2.12/3.2.9.0/mockito-3-4_2.12-3.2.9.0.jar:/Users/denis.bolshakov/.m2/repository/org/mockito/mockito-core/3.4.6/mockito-core-3.4.6.jar:/Users/denis.bolshakov/.m2/repository/net/bytebuddy/byte-buddy/1.10.13/byte-buddy-1.10.13.jar:/Users/denis.bolshakov/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.13/byte-buddy-agent-1.10.13.jar:/Users/denis.bolshakov/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/Users/denis.bolshakov/.m2/repository/org/scalatestplus/selenium-3-141_2.12/3.2.9.0/selenium-3-141_2.12-3.2.9.0.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/denis.bolshakov/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/denis.bolshakov/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/denis.bolshakov/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/denis.bolshakov/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.50.0/htmlunit-driver-2.50.0.jar:/Users/denis.bolshakov/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.50.0/htmlunit-2.50.0.jar:/Users/denis.bolshakov/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/denis.bolshakov/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/denis.bolshakov/.m2/repository/org/apache/commons/commons-text/1.6/commons-text-1.6.jar:/Users/denis.bolshakov/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/denis.bolshakov/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/denis.bolshakov/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/Users/denis.bolshakov/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/denis.bolshakov/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.50.0/htmlunit-core-js-2.50.0.jar:/Users/denis.bolshakov/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.50.0/neko-htmlunit-2.50.0.jar:/Users/denis.bolshakov/.m2/repository/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.jar:/Users/denis.bolshakov/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/denis.bolshakov/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.7.0/htmlunit-cssparser-1.7.0.jar:/Users/denis.bolshakov/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/denis.bolshakov/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/Users/denis.bolshakov/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/denis.bolshakov/.m2/repository/com/shapesecurity/salvation2/3.0.0/salvation2-3.0.0.jar:/Users/denis.bolshakov/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.40.v20210413/websocket-client-9.4.40.v20210413.jar:/Users/denis.bolshakov/.m2/repository/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar:/Users/denis.bolshakov/.m2/repository/org/eclipse/jetty/jetty-http/9.4.43.v20210629/jetty-http-9.4.43.v20210629.jar:/Users/denis.bolshakov/.m2/repository/org/eclipse/jetty/jetty-util/9.4.43.v20210629/jetty-util-9.4.43.v20210629.jar:/Users/denis.bolshakov/.m2/repository/org/eclipse/jetty/jetty-io/9.4.40.v20210413/jetty-io-9.4.40.v20210413.jar:/Users/denis.bolshakov/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.40.v20210413/websocket-common-9.4.40.v20210413.jar:/Users/denis.bolshakov/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.40.v20210413/websocket-api-9.4.40.v20210413.jar:/Users/denis.bolshakov/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/denis.bolshakov/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/denis.bolshakov/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar:/Users/denis.bolshakov/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"/>
+    <property name="spark.test.docker.keepContainer" value="false"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property
+    name="java.home" value="/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre"/>
+    <property
+    name="sun.java.command" value="org.scalatest.tools.Runner -R /Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn/target/scala-2.12/classes /Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn/target/scala-2.12/test-classes -l org.apache.spark.tags.ChromeUITest -o -f /Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn/target/surefire-reports/SparkTestSuite.txt -u /Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn/target/surefire-reports/."/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_312"/>
+    <property name="spark.test.webdriver.chrome.driver" value="null"/>
+    <property
+    name="java.ext.dirs" value="/Users/denis.bolshakov/Library/Java/Extensions:/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property
+    name="sun.boot.class.path" value="/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/lib/resources.jar:/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/lib/rt.jar:/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/lib/sunrsasign.jar:/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/lib/jsse.jar:/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/lib/jce.jar:/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/lib/charsets.jar:/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/lib/jfr.jar:/Users/denis.bolshakov/Library/Java/JavaVirtualMachines/azul-1.8.0_312/Contents/Home/jre/classes"/>
+    <property
+    name="spark.test.home" value="/Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="spark.unsafe.exceptionOnMemoryLeak" value="true"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property
+    name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property
+    name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="test.src.tables" value="__not_used__"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

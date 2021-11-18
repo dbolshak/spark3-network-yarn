@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <macrodef name="shaded">
+    <attribute name="resource"/>
+    <sequential>
+      <fail message="Not found org/spark3project/@{resource}">
+        <condition>
+          <not>
+            <resourceexists>
+              <zipentry zipfile="/Users/denis.bolshakov/github.com/dbolshak/spark3-network-yarn/target/scala-2.12/spark-3.2.0-yarn-shuffle.jar" name="org/spark3project/@{resource}"/>
+            </resourceexists>
+          </not>
+        </condition>
+      </fail>
+    </sequential>
+  </macrodef>
+  <echo>Verifying dependency shading</echo>
+  <shaded resource="com/fasterxml/jackson/core/JsonParser.class"/>
+  <shaded resource="com/fasterxml/jackson/annotation/JacksonAnnotation.class"/>
+  <shaded resource="com/fasterxml/jackson/databind/JsonSerializer.class"/>
+</target>
+</project>
