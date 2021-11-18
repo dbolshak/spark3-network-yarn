@@ -36,6 +36,7 @@
     <shuffle.jar>${project.build.directory}/scala-${scala.binary.version}/spark-${project.version}-yarn-shuffle.jar</shuffle.jar>
     <shade>org/spark3project/</shade>
     <spark.shade.packageName>org.spark3project</spark.shade.packageName>
+    <hadoop.version>2.6.5</hadoop.version>
   </properties>
 
   <dependencies>
@@ -62,16 +63,17 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Provided dependencies -->
     <dependency>
       <groupId>org.apache.hadoop</groupId>
-      <artifactId>${hadoop-client-api.artifact}</artifactId>
+      <artifactId>hadoop-common</artifactId>
       <version>${hadoop.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.hadoop</groupId>
-      <artifactId>${hadoop-client-runtime.artifact}</artifactId>
+      <artifactId>hadoop-yarn-api</artifactId>
       <version>${hadoop.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
