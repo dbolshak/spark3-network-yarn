@@ -1,7 +1,7 @@
-#Descrption
+# Descrption
 This is silently modified copy of [network-yarn](https://github.com/apache/spark/tree/v3.2.0/common/network-yarn) based on 3.2.0 spark version.
 
-#Purpose
+# Purpose
 It allows deployning of two shuffle services of Spark to Yarn.F
 or example, one instance could be run for spark2 and another for spark3 without any classpath conflicts (aka dependency hell).
 
