@@ -128,6 +128,10 @@
                 <include>io.netty.**</include>
               </includes>
             </relocation>
+            <relocation>
+              <pattern>org.sparkproject.guava</pattern>
+              <shadedPattern>${spark.shade.packageName}.guava</shadedPattern>
+            </relocation>
           </relocations>
         </configuration>
         <executions>
