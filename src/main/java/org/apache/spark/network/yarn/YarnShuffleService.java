@@ -96,27 +96,27 @@ public class YarnShuffleService extends AuxiliaryService {
   private static final Logger logger = LoggerFactory.getLogger(YarnShuffleService.class);
 
   // Port on which the shuffle server listens for fetch requests
-  private static final String SPARK_SHUFFLE_SERVICE_PORT_KEY = "spark.shuffle.service.port";
-  private static final int DEFAULT_SPARK_SHUFFLE_SERVICE_PORT = 7337;
+  private static final String SPARK_SHUFFLE_SERVICE_PORT_KEY = "spark3.shuffle.service.port";
+  private static final int DEFAULT_SPARK_SHUFFLE_SERVICE_PORT = 7338;
 
   /**
    * The namespace to use for the metrics record which will contain all metrics produced by the
    * shuffle service.
    */
   static final String SPARK_SHUFFLE_SERVICE_METRICS_NAMESPACE_KEY =
-      "spark.yarn.shuffle.service.metrics.namespace";
-  private static final String DEFAULT_SPARK_SHUFFLE_SERVICE_METRICS_NAME = "sparkShuffleService";
+      "spark3.yarn.shuffle.service.metrics.namespace";
+  private static final String DEFAULT_SPARK_SHUFFLE_SERVICE_METRICS_NAME = "spark3ShuffleService";
 
   // Whether the shuffle server should authenticate fetch requests
-  private static final String SPARK_AUTHENTICATE_KEY = "spark.authenticate";
+  private static final String SPARK_AUTHENTICATE_KEY = "spark3.authenticate";
   private static final boolean DEFAULT_SPARK_AUTHENTICATE = false;
 
   private static final String RECOVERY_FILE_NAME = "registeredExecutors.ldb";
-  private static final String SECRETS_RECOVERY_FILE_NAME = "sparkShuffleRecovery.ldb";
+  private static final String SECRETS_RECOVERY_FILE_NAME = "spark3ShuffleRecovery.ldb";
 
   // Whether failure during service initialization should stop the NM.
   @VisibleForTesting
-  static final String STOP_ON_FAILURE_KEY = "spark.yarn.shuffle.stopOnFailure";
+  static final String STOP_ON_FAILURE_KEY = "spark3.yarn.shuffle.stopOnFailure";
   private static final boolean DEFAULT_STOP_ON_FAILURE = false;
 
   // just for testing when you want to find an open port
@@ -132,7 +132,7 @@ public class YarnShuffleService extends AuxiliaryService {
    * configuration overlay. If found, this will be parsed as a standard Hadoop
    * {@link Configuration config} file and will override the configs passed from the NodeManager.
    */
-  static final String SHUFFLE_SERVICE_CONF_OVERLAY_RESOURCE_NAME = "spark-shuffle-site.xml";
+  static final String SHUFFLE_SERVICE_CONF_OVERLAY_RESOURCE_NAME = "spark3-shuffle-site.xml";
 
   // just for integration tests that want to look at this file -- in general not sensible as
   // a static
@@ -177,8 +177,8 @@ public class YarnShuffleService extends AuxiliaryService {
     // It is hard-coded instead of using the value of the `spark.shuffle.service.name` configuration
     // because at this point in instantiation there is no Configuration object; it is not passed
     // until `serviceInit` is called, at which point it's too late to adjust the name.
-    super("spark_shuffle");
-    logger.info("Initializing YARN shuffle service for Spark");
+    super("spark3_shuffle");
+    logger.info("Initializing YARN shuffle service for Spark3");
     instance = this;
   }
 
@@ -200,7 +200,7 @@ public class YarnShuffleService extends AuxiliaryService {
     URL confOverlayUrl = Thread.currentThread().getContextClassLoader()
         .getResource(SHUFFLE_SERVICE_CONF_OVERLAY_RESOURCE_NAME);
     if (confOverlayUrl != null) {
-      logger.info("Initializing Spark YARN shuffle service with configuration overlay from {}",
+      logger.info("Initializing Spark3 YARN shuffle service with configuration overlay from {}",
           confOverlayUrl);
       _conf.addResource(confOverlayUrl);
     }
@@ -256,11 +256,11 @@ public class YarnShuffleService extends AuxiliaryService {
 
       MetricsSystemImpl metricsSystem = (MetricsSystemImpl) DefaultMetricsSystem.instance();
       metricsSystem.register(
-          metricsNamespace, "Metrics on the Spark Shuffle Service", serviceMetrics);
+          metricsNamespace, "Metrics on the Spark3 Shuffle Service", serviceMetrics);
       logger.info("Registered metrics with Hadoop's DefaultMetricsSystem using namespace '{}'",
           metricsNamespace);
 
-      logger.info("Started YARN shuffle service for Spark on port {}. " +
+      logger.info("Started YARN shuffle service for Spark3 on port {}. " +
         "Authentication is {}.  Registered executor file is {}", port, authEnabledString,
         registeredExecutorFile);
     } catch (Exception e) {
@@ -299,7 +299,7 @@ public class YarnShuffleService extends AuxiliaryService {
     db = LevelDBProvider.initLevelDB(secretsFile, CURRENT_VERSION, mapper);
     logger.info("Recovery location is: " + secretsFile.getPath());
     if (db != null) {
-      logger.info("Going to reload spark shuffle data");
+      logger.info("Going to reload spark3 shuffle data");
       DBIterator itr = db.iterator();
       itr.seek(APP_CREDS_KEY_PREFIX.getBytes(StandardCharsets.UTF_8));
       while (itr.hasNext()) {
