@@ -19,6 +19,7 @@ In order to overwrite default configs of shuffle service use `spark3` suffix ins
 # Build
 To build project you have to run `mvn clean install` command.
 So it requires to have maven (at least 3.6.3 version) and java 8.
+Or you can download ready to use jar file from releases of this github repository.
 
 # Implementation
 - Hadoop version was set to 2.6.5
