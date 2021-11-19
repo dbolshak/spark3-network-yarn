@@ -2,7 +2,7 @@
 This is silently modified copy of [network-yarn](https://github.com/apache/spark/tree/v3.2.0/common/network-yarn) module based on 3.2.0 spark version.
 
 # Purpose
-It allows having two shuffle services in Yarn cluster for different versions of Spark. So it make possible to run spark2 and spark3 worloads on Yarn simulteniously without any classpath conflicts (aka dependency hell).
+It allows having two shuffle services in Yarn cluster for different versions of Spark. So it makes possible to run spark2 and spark3 worloads on Yarn simulteniously without any classpath conflicts (aka dependency hell).
 
 # Hadoop
 Hadoop version for this project has been changed to 2.6.5.
