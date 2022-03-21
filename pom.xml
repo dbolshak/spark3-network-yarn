@@ -47,6 +47,11 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.fusesource.leveldbjni</groupId>
+      <artifactId>leveldbjni-all</artifactId>
+      <version>1.8</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-tags_${scala.binary.version}</artifactId>
       <scope>test</scope>
@@ -153,14 +158,6 @@
             <relocation>
               <pattern>javax.annotation</pattern>
               <shadedPattern>${spark.shade.packageName}.javax.annotation</shadedPattern>
-            </relocation>
-            <relocation>
-              <pattern>org.iq80</pattern>
-              <shadedPattern>${spark.shade.packageName}.iq80</shadedPattern>
-            </relocation>
-            <relocation>
-              <pattern> org.fusesource</pattern>
-              <shadedPattern>${spark.shade.packageName}.fusesource</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.apache.commons</pattern>
